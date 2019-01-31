@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <input type="text" id="input" class="navElements input" placeholder="Search">
+        <button type="submit" class="navElements btn search" id="btnSearch">Search</button>
+        <button type="submit" class="navElements btn weatherStats" id="btnWeatherStats">Weather Stats</button>
+        <button type="submit" class="navElements btn hourly" id="btnHourly">Hourly</button>
+    </nav>
+    <img src="img/logo.png" alt="logo" class="logo" width="50px">
+    <div id="majorDiv" class="majorDiv">
+        <div id="divFirst" class="div divFirst">
+        </div>
+        <div id="divSecond" class="div divSecond">
+        </div>
+    </div>
+    <table id="table" class="table">
+        <thead id="thead" class="thead">
+            <th>Icon</th>
+            <th>Description</th>
+            <th>Date and time</th>
+            <th>Temperature ( ℃ )</th>
+            <th>Humidity ( % )</th>
+            <th>Wind Speed ( m/s )</th>
+        </thead>
+        <tbody id="tbody" class="tbody">
+
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    color:black;
+    background-image: url(world.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+}
+
+table{
+    overflow: hidden;
+    border: 1px solid black;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    display: inline-block;
+    color:whitesmoke;
+}
+
+th{
+    border: 1px solid black;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.335);
+    border-radius: 5px;
+    padding: 10px;
+    color:whitesmoke;
+    margin:10px;
+}
+
+td{
+    border: 1px solid black;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.335);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color:whitesmoke;
+    margin:10px;
+    opacity: 0.95;
+}
+
+td:hover{
+    background-color: rgba(255, 166, 0, 0.801);
+    cursor: pointer;
+}
+
+th:hover{
+    background-color: rgba(255, 166, 0, 0.801);
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 50px;
+}
+
+input{
+    width:300px;
+}
+
+button{
+    width:300px;
+}
+
+#pageRender{
+    background-color: white;
+    font-size: 30px;
+}

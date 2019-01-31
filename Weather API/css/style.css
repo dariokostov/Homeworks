@@ -1,0 +1,79 @@
+body {
+    background-image: url("../img/nature.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.774);
+    border: none;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+}
+
+.navElements {
+    border: none;
+    border-radius: 8px;
+    height: 25px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    font-size: 15px;
+    color: rgb(0, 162, 255);
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.input {
+    font-size: 13px;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.weatherStats {
+    position: absolute;
+    right: 80px;
+}
+
+.hourly {
+    position: absolute;
+    right: 10px;
+}
+
+.table {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    border: none;
+    border-radius: 8px;
+}
+
+.majorDiv {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+
+.div {
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 15px;
+}

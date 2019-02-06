@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btnLogInShow">Log In</button>
+    <button id="btnRegisterShow">Register</button><br><br>
+    <button id="btnAddressShow">Add Address</button>
+    <a href="index.html" style="text-decoration: none"><button id="btnLogOut">Log Out</button></a>
+
+    <fieldset id="registerForm">
+        <legend>Register</legend>
+        <form>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name"><br>
+            <input type="text" id="lastName" placeholder="Last Name"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button type="submit" id="btnSubmitRegister">Submit</button>
+        </form>
+    </fieldset>
+
+    <fieldset id="addressForm">
+        <legend>Add Address</legend>
+        <form>
+            <input type="text" id="address" placeholder="Address"><br>
+            <input type="text" id="addressNumber" placeholder="Address Number"><br>
+            <input type="text" id="city" placeholder="City"><br>
+            <input type="text" id="country" placeholder="Country"><br>
+            <button type="submit" id="btnSubmitAddress">Add Address</button>
+        </form>
+    </fieldset>
+
+    <fieldset id="logInForm">
+        <legend>Log In</legend>
+        <form>
+            <input type="text" id="usernameLogIn" placeholder="Username"><br>
+            <input type="password" id="passwordLogIn" placeholder="Password"><br>
+            <button type="submit" id="btnSubmitLogIn">Log In</button>
+        </form>
+    </fieldset>
+    <script src="index.js"></script>
+</body>
+
+</html>

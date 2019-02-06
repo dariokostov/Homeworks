@@ -17,11 +17,11 @@
     <fieldset id="registerForm">
         <legend>Register</legend>
         <form>
-            <input type="text" name="firstName" id="firstName" placeholder="First Name"><br>
-            <input type="text" id="lastName" placeholder="Last Name"><br>
-            <input type="text" id="username" placeholder="Username"><br>
-            <input type="email" id="email" placeholder="Email"><br>
-            <input type="password" id="password" placeholder="Password"><br>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required="required"><br>
+            <input type="text" id="lastName" placeholder="Last Name" required="required"><br>
+            <input type="text" id="username" placeholder="Username" required="required"><br>
+            <input type="email" id="email" placeholder="Email" required="required"><br>
+            <input type="password" id="password" placeholder="Password" required="required"><br>
             <button type="submit" id="btnSubmitRegister">Submit</button>
         </form>
     </fieldset>
@@ -40,8 +40,8 @@
     <fieldset id="logInForm">
         <legend>Log In</legend>
         <form>
-            <input type="text" id="usernameLogIn" placeholder="Username"><br>
-            <input type="password" id="passwordLogIn" placeholder="Password"><br>
+            <input type="text" id="usernameLogIn" placeholder="Username" required="required"><br>
+            <input type="password" id="passwordLogIn" placeholder="Password" required="required"><br>
             <button type="submit" id="btnSubmitLogIn">Log In</button>
         </form>
     </fieldset>

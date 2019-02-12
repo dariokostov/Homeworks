@@ -20,6 +20,10 @@ class Animal {
     }
 
     eat(food) {
+        if(food.name.toLowerCase() === this.name.toLowerCase()){
+            console.log(`The ${food.name} doesn't eat ${this.name}`)
+            return
+        }
         if (food instanceof Animal && food.isEaten === false) {
             if (this._type === "herbivore") {
                 console.log(`The animal ${this.name} is a herbivore and does not eat other animals`)
@@ -37,13 +41,6 @@ class Animal {
         }
         if (food.isEaten === true){
             console.log(`${food.name} already eaten`)
-        }
-    }
-    static eatItSelf(animal){
-        if(animal.name.toLowerCase() === this.name.toLowerCase()){
-            console.log(`The ${animal.name} doesn't eat ${animal.name}`)
-        } else {
-            console.log(`Try with method eat :D`)
         }
     }
 }
@@ -80,6 +77,10 @@ class Lion extends Animal {
     hunt(input) {
         setTimeout(() => {
             if (input instanceof Animal) {
+                if (this._isKingOfTheJungle === true) {
+                    this.eat(input);
+                    return;
+                }
                 let skill = Math.round(Math.random() * 10)
                 console.log(`Input skill: ${skill}`)
                 if (this._isKingOfTheJungle === false) {
@@ -87,10 +88,6 @@ class Lion extends Animal {
                         this.eat(input);
                         return;
                     }
-                }
-                if (this._isKingOfTheJungle === true) {
-                    this.eat(input);
-                    return;
                 }
                 if (skill > this._huntingSkill) {
                     console.log("The Lion didn't catch it's prey");
@@ -132,10 +129,10 @@ let petar = new Animal("mouse", "carnivore", 23, 10);
 let viktor = new Animal("lion", "omnivore", 23, 45);
 let dario = new Rabbit(3, 2, 7);
 let martin = new Lion(6, 20, 9, false);
-let goran = new Lion(6, 20, 5, false);
+let goran = new Lion(6, 20, 5, true);
 
 mirka.eat(dario);
 martin.hunt(petar);
-goran.eat(dario);
-Lion.eatItSelf(goran);
-Lion.eatItSelf(dario);
+goran.hunt(dario);
+dario.eat(goran);
+dario.eat(dario);

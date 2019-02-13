@@ -49,7 +49,10 @@ let btn = {
     addressShow: document.getElementById("btnAddressShow"),
     logInShow: document.getElementById("btnLogInShow"),
     registerShow: document.getElementById("btnRegisterShow"),
-    logOut: document.getElementById("btnLogOut")
+    logOut: document.getElementById("btnLogOut"),
+    register: document.getElementById("btnSubmitRegister"),
+    logIn: document.getElementById("btnSubmitLogIn"),
+    address: document.getElementById("btnSubmitAddress")
 };
 
 let input = {
@@ -101,21 +104,22 @@ btn.registerShow.addEventListener("click", () => allFunc.showHide(form.register,
 
 btn.addressShow.addEventListener("click", () => form.address.style.display = "block");
 
-form.register.onsubmit = function (e) {
+
+btn.register.addEventListener("click", function (e) {
     e.preventDefault();
     let user = new Register(input.firstName.value, input.lastName.value, input.username.value, input.email.value, input.password.value);
     allFunc.registerSubmit(user);
     console.log(users);
-}
+})
 
-form.address.onsubmit = function (e) {
+btn.address.addEventListener("click", function (e) {
     e.preventDefault();
     let address = new Address(input.address.value, input.addressNumber.value, input.city.value, input.country.value);
     Object.assign(users[users.length - 1], address);
     console.log(users);
-}
+})
 
-form.logIn.onsubmit = function (e) {
+btn.logIn.addEventListener("click", function (e) {
     e.preventDefault();
     let flag = false
     users.forEach(element => {
@@ -131,4 +135,4 @@ form.logIn.onsubmit = function (e) {
     if (!flag) {
         alert("Incorrect login details");
     }
-}
+})

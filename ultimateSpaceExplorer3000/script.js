@@ -100,6 +100,7 @@ $(document).ready(function () {
                     this.isWorking = true;
                     return;
                 }
+                console.log(`${this.name} is heading to ${planet.name}`)
                 setTimeout(() => {
                     console.log(`${this.name} should get to ${planet.name}`);
                     if (this.dockedPlanet instanceof Planet) {

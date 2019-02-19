@@ -1,0 +1,18 @@
+body {
+    background-image: url("img/background.jpg");
+}
+
+.col {
+    text-align: center;
+    background-image: url(img/card.jpg);
+    height: 700px;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.btn {
+    margin: 10px;
+    bottom: 100px;
+    background-color: black;
+    color: white;
+}
